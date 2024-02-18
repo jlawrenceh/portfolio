@@ -4,7 +4,8 @@ function Data() {
   return (
     <div className="home__data">
         <h1 className="home__title">
-            John Smith
+            Lawrence Hernandez 
+            {/*
             <svg
                   width="36"
                   height="36"
@@ -54,14 +55,16 @@ function Data() {
                     fill="#EBA352"
                   ></path>
                 </svg>
+                */}
         </h1>
 
         <h3 className="home__subtitle">
-            Visual Designer
+          Full-Stack Dev
         </h3>
 
         <p className="home__description">
-            I'm creative designer based in New York, and I'm very passionate and dedicated to my work.
+            I code.
+            Blah blah blah blah blah blah blah blah blah blah blah blah.
         </p>
 
 
