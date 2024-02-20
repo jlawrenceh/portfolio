@@ -5,9 +5,8 @@ import "../styles/Services.css";
 function Services() {
     const [activeTab, setActiveTab] = useState(0);
 
-    
   return (
-    <section className="services section">
+    <section className="services section" id="services">
         <h2 className="section__title">Services</h2>
         <span className="section__subtitle">What i offer</span>
 
@@ -265,9 +264,6 @@ function Services() {
                                 </p>
                             </li>
                         </ul>
-
-
-
                     </div>
                 </div>
 
