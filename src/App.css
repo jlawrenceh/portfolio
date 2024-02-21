@@ -8,6 +8,7 @@
     --header-height: 3rem;
 
     /*====== Colors ======*/
+
     /*Color mode HSL (hue, saturation, lightness)*/
     --hue: 0;
     --sat: 0%;
@@ -22,10 +23,12 @@
     --body-font: "Poppins", sans-serf;
 
     /*.5rem = 8px | 1rem = 16px ...*/
+    
     --big-font-size: 3.5rem;
     --h1-font-size: 2.25rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
+
     --normal-font-size: 1rem;
     --small-font-size: 0.875rem;
     --smaller-font-size: 0.813rem;
@@ -121,7 +124,6 @@ img {
 
 .section{
     padding: 6rem 0 2rem;
-   
 }
 
 .section__title{
