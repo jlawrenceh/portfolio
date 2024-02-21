@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import "../styles/Services.css";
+import "./Services.css";
 
 
 function Services() {

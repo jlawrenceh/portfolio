@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import "../styles/qualifications.css";
+import "./qualifications.css";
 
 function Qualifications() {
 

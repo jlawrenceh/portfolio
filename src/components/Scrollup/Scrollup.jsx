@@ -1,5 +1,5 @@
 import React from 'react'
-import "../styles/Scrollup.css";
+import "./Scrollup.css";
 
 
 function Scrollup() {

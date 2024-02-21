@@ -1,7 +1,7 @@
 import React from 'react';
-import "../styles/About.css";
-import AboutImg from "../assets/bojji2.webp";
-import CV from "../assets/John-Cv.pdf";
+import "./About.css";
+import AboutImg from "../../assets/bojji2.webp";
+import CV from "../../assets/John-Cv.pdf";
 import Info from "./Info";
 
 
