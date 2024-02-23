@@ -16,7 +16,7 @@ function Home() {
           <div className="home_content">
             <div className="info_container">
               <h1 className="myName">
-                Lawrence Hernandez
+                JOHN LAWRENCE HERNANDEZ
               </h1>
               <h3 className="role">
                 Full-Stack Dev

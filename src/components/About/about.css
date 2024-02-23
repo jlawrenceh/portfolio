@@ -1,14 +1,100 @@
 .image_container
 {
+
+    
     background: url("../../assets/bojji.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
     box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
-    order: 1;
-    justify-self: center;
     align-self: center;
+    
     width: 300px;
     height: 300px;
+}
+
+.details_container{
+    /*border: 1px solid rgba(0, 0, 0, 0.1);*/
+    /*background-color: #ffffff;*/
+    /*border-radius: 1rem;*/
+
+    margin-top: 3.5rem;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    column-gap: 0;
+    height: 550px;
+    padding: 1rem;
+}
+
+.details_tabbed_menu{
+   
+}
+
+.menu_title{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tab{
+    color: #8f8f8f;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.tab-title {
+    line-height: 2; /* Adjust this value as needed */
+    font-weight: 600;
+}
+
+.horizontal-line{
+    width: 4rem;
+    height: 3px;
+    background-color: black;
+    align-self: center;
+    justify-self: center;
+    border-radius: 1rem;
+
+    animation: show 1s normal;
+}
+
+@keyframes show {
+    
+}
+
+.active-tab {
+    display:flex;
+    color: #2c2c2c;
+}
+
+.menu_title li{
+    text-align: center;
+    width: 100%;
+    border-radius: 0.25rem;
+}
+
+
+
+.menu_content{
+    padding: 3rem 2rem 2rem;
+
+    width: 100%;
+    height: 100%;
+    display: none;
+    text-align: left;
+    font-size: 1.15rem;
+    line-height: 2rem;
+}
+
+.active-menu{
+    display: block;
+    
+}
+
+
+.about__icon {
+    font-size: 1.8rem;
+    margin-right: var(--mb-0-25);
 }

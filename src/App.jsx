@@ -13,8 +13,8 @@ function App() {
       <Header/>
       
       <main className="main">
-       <Home/>
-       <About/>
+     <Home/>
+       
       </main>
   
     </>

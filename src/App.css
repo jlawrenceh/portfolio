@@ -23,7 +23,7 @@
     --body-font: "Poppins", sans-serf;
 
     /*.5rem = 8px | 1rem = 16px ...*/
-    
+
     --big-font-size: 3.5rem;
     --h1-font-size: 2.25rem;
     --h2-font-size: 1.5rem;
@@ -99,7 +99,6 @@ body{
 }
 
 h1, h2, h3 {
-    color: var(--title-color);
     font-weight: var(--font-semi-bold);
 }
 
@@ -195,7 +194,6 @@ img {
 @media screen and (max-width: 768px) {
     body {
         margin: 0 0 var(--header-height) 0;
-        
     }
 
     .section {
@@ -208,10 +206,14 @@ img {
 }
 
 @media screen and (max-width: 576px) {
+   .main{
+    display: flex;
+    flex-direction: column;
+   }
 }
 
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 425px) {
     :root {
         --big-font-size: 2.25rem;
     }
