@@ -1,7 +1,7 @@
 import React, {useRef} from 'react';
 import {motion, useScroll ,useTransform } from "framer-motion";
 
-import "./About.css";
+import "./about.css";
 import AboutImg from "../../assets/portfolio-pic.jpg";
 import CV from "../../assets/HernandezJohnLawrence-Resume.pdf";
 import Info from "./Info";
