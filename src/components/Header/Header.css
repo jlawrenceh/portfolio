@@ -1,12 +1,10 @@
-.header{
-    background-color: #2c2c2c;
-    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
-
+.header {
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
+    background-color: #2c2c2c; /*  change to --body-color*/
 }
 
 .nav{
@@ -14,43 +12,57 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    column-gap: 1rem;
 }
 
-.nav_logo{
+.nav__logo,
+.nav__toggle {
     color: #cacaca;
-    font-weight: 500;
+    font-weight: var(--font-medium);
 }
 
-.nav_menu{
-    
+.nav__logo {
+    color: #b1b1b1;
 }
 
-.nav_list{
+.nav__list {
     display: flex;
     column-gap: 2rem;
 }
 
-.nav_link{
+
+.nav__link {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: .875rem;
-    color: #cacaca;
-    font-weight: 450;
+    font-size: var(--small-font-size);
+    color: #b1b1b1;
+    font-weight: var(--font-medium);
     transition: .3s;
 }
 
-.nav_icon,
-.nav_close,
-.nav_toggle {
+
+.nav__icon,
+.nav__close,
+.nav__toggle {
     display: none;
 }
 
 
-@media screen and (max-width: 992px) {
+/* Active Link */
 
+.active-link,
+.nav__link:hover {
+    color: #ececec;
 }
 
+
+/*Change background header */
+.scroll-header {
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+}
+
+/*===== breakpoints =====*/
 @media screen and (max-width: 768px) {
     .header {
         top: initial;
@@ -58,11 +70,12 @@
         z-index: 1000;
     }
 
-    .nav_link {
-        color: #757575;
+    .nav {
+        height: var(--header-height); 
+        
     }
 
-    .nav_menu{
+    .nav__menu {
         background-color: #2c2c2c;
         position: fixed;
         bottom: -100%;
@@ -72,58 +85,57 @@
         box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
         border-radius: 1.5rem 1.5rem 0 0;
         transition: .3s;
-    }
-
-    .nav_list {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
         
     }
 
-    .nav_icon {
+    /* show menu*/
+    .show-menu{
+        bottom: 0;
+    }
+
+    .nav__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .nav__icon {
         font-size: 1.2rem;
     }
 
-    .nav_close {
+    .nav__close {
         position: absolute;
         right: 1.3rem;
         bottom: .5rem;
         font-size: 1.5rem;
         cursor: pointer;
-        color: #757575;
+        color: #b1b1b1;
     }
 
-    .nav_close:hover {
-        color: var(--title-color-dark);
+    .nav__close:hover {
+        color: #ececec;
     }
 
-    .nav_toggle {
+    .nav__toggle {
         font-size: 1.1rem;
         cursor: pointer;
     }
 
-    .show-menu{
-        bottom: 0;
-    }
-    
-    .nav_icon,
-    .nav_close,
-    .nav_toggle {
+    .nav__icon,
+    .nav__close,
+    .nav__toggle {
         display: block;
     }
 }
 
-@media screen and (max-width: 576px) {
-}
-
-
 @media screen and (max-width: 350px) {
-    .nav_menu {
+    .nav__menu {
         padding: 2rem 0.25rem 4rem;
     }
 
-    .nav_list {
+    .nav__list {
         column-gap: 0;
     }
+
+
 }
