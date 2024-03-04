@@ -44,37 +44,25 @@ function Contact() {
 
           <div className="contact__info">
             <div className="contact__card">
-              <i className="bx bx-mail-send contact__card-icon"></i>
-
+              <i className="bx bxl-gmail contact__card-icon"></i>
               <h3 className="contact__card-title">Email</h3>
-              <span className="contact__card-data">user@gmail.com</span>
+              <span className="contact__card-data">jlawrencehernandez@gmail.com</span>
 
-              <a href="" className="contact__button">
+              <a href="mailto:jlawrencehernandez@gmail.com" className="contact__button">
                 Write me <i className="bx bx-right-arrow-alt"></i>
                 </a>
             </div>
 
             <div className="contact__card">
-              <i className="bx bxl-messenger contact__card-icon"></i>
+              <i className="bx bxl-linkedin-square contact__card-icon"></i>
+              <h3 className="contact__card-title">LinkedIn</h3>
+              <span className="contact__card-data">jlawrencehernandez</span>
 
-              <h3 className="contact__card-title">Messenger</h3>
-              <span className="contact__card-data">user.fb123</span>
-
-              <a href="" className="contact__button">
+              <a href="https://www.linkedin.com/in/johnlawrencemhernandez/" className="contact__button">
                 Write me <i className="bx bx-right-arrow-alt"></i>
                 </a>
             </div>
 
-            <div className="contact__card">
-              <i className="bx bxl-whatsapp contact__card-icon"></i>
-
-              <h3 className="contact__card-title">Whatsapp</h3>
-              <span className="contact__card-data">999-888-777</span>
-
-              <a href="" className="contact__button">
-                Write me <i className="bx bx-right-arrow-alt"></i>
-                </a>
-            </div>
 
           </div>
         </div>

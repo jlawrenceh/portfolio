@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Testimonials.css";
+import "./Certificates.css";
 import { Data } from "./Data";
 
 import {Swiper, SwiperSlide} from "swiper/react";
@@ -9,13 +9,13 @@ import "swiper/css/pagination";
 
 import { Pagination } from "swiper/modules";
 
-function Testimonials() {
+function Certificates() {
   return (
-    <section className="testimonial container section">
-        <h2 className="section__title">Testimonials</h2>
-        <span className="section__subtitle"> What my clients say </span>
+    <section className="certificates container section">
+        <h2 className="section__title">Certificates</h2>
+        <span className="section__subtitle"></span>
        
-        <Swiper className="testimonial__container"
+        <Swiper className="certificates__container"
           loop={true}
           grabCursor={true}
           spaceBetween={24}
@@ -34,13 +34,8 @@ function Testimonials() {
         modules={[Pagination]}>
             {Data.map(({id, image, title, description}) => {
               return (
-                <SwiperSlide className="testimonial__card" key={id}>
-                  <img src= {image} alt=""className="testimonial__img" />
-
-                  <h3 className="testimonial__name">{title}</h3>
-                  <p className="testimonial__description">
-                    {description}
-                  </p>
+                <SwiperSlide className="certificates__card" key={id}>
+                  <img src= {image} alt=""className="certificates__img" />
                 </SwiperSlide>
               )
             })}
@@ -49,4 +44,4 @@ function Testimonials() {
   )
 }
 
-export default Testimonials
+export default Certificates

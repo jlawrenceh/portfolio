@@ -16,7 +16,7 @@ function Social() {
             className="home__social-icon" 
             target="_blank"
         >
-            <i className="uil uil-dribbble"></i>
+            <i className="bx bxl-gmail"></i>
         </a>
 
        

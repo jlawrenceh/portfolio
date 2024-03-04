@@ -4,21 +4,7 @@ function Footer() {
   return (
     <footer className="footer">
         <div className="footer__container container">
-            <h1 className="footer__title">LOGO</h1>
-
-            <ul className="footer__list">
-                <li>
-                    <a href="#" className="footer__link">About</a>
-                </li>
-
-                <li>
-                    <a href="#" className="footer__link">Projects</a>
-                </li>
-
-                <li>
-                    <a href="#" className="footer__link">Testimonials</a>
-                </li>
-            </ul>
+            <h1 className="footer__title">JOHN LAWRENCE HERNANDEZ</h1>
 
             <div className="footer__social">
             <a 
@@ -30,26 +16,26 @@ function Footer() {
             </a>
 
             <a 
-            href="https://www.facebook.com" 
+           href="mailto:jlawrencehernandez@gmail.com"
             className="footer__social-link" 
             target="_blank"
             >
-                <i className="bx bxl-facebook"></i>
+                <i className="bx bxl-gmail"></i>
             </a>
 
 
 
             <a 
-            href="https://www.instagram.com" 
+            href="https://www.linkedin.com/in/johnlawrencemhernandez/"
             className="footer__social-link" 
             target="_blank"
             >
-                <i className="bx bxl-instagram"></i>
+                <i className="bx bxl-linkedin"></i>
             </a>
             </div>
 
             <span className = "footer__copy">
-                &#169; johnlawrencehernandez. All rights reserved
+                &#169; 2024 John Lawrence Hernandez. All rights reserved
             </span>
         </div>
     </footer>

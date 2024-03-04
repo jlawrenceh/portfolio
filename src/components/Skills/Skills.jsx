@@ -1,21 +1,21 @@
 import React from 'react';
-import Frontend from "./Frontend";
-import Backend from "./Backend";
+import Frontend from "./Techstack";
 import "./Skills.css";
 
 function Skills() {
   return (
     <section className="skills section" id="skills">
-        <h2 className="section__title">Skills</h2>
-            <span className="section__subtitle">My technical level</span>
+        <h2 className="section__title">Tech Stacks</h2>
+            <span className="section__subtitle">Technologies that I've used through out my journey</span>
 
             <div className="skills__container container grid">
+              <div className="techstack-box">
                 <Frontend/>
-
-                <Backend/>
+              </div>
+              
+              
             </div>
     </section>
   )
 }
-
 export default Skills

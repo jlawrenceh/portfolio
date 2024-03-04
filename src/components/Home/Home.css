@@ -1,11 +1,13 @@
+@import url('https://db.onlinewebfonts.com/c/6601fbe65008cbf2efe6b69f04759256?family=GT+Haptik+Bold+Regular');
+
 .home__container{
     row-gap: 7rem
 }
 
 .home__content {
-    grid-template-columns: 116px repeat(2, 1fr);
+    grid-template-columns: 116px 1fr;
     padding-top: 5.5rem;
-    column-gap: 2rem;
+    column-gap: 1.5rem;
     align-items: center;
 }
 
@@ -13,6 +15,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
+  
 
     /*display: flex;
     flex-direction: column;
@@ -22,22 +25,23 @@
 
 .home__social-icon {
     font-size: 1.25rem;
-    color: var(--title-color);
+    color: #b1b1b1;
+   
 }
 
 .home__social-icon:hover{
-    color: var(--title-color-dark);
+    color: #ececec;
+}
+
+.home__data{
+    overflow-wrap: break-word;
 }
 
 .home__title {
-    font-size: 2.3rem;
+    font-size: 3.8rem;
     margin-bottom: var(--mb-0-25);
-}
-
-.home__hand{
-    width: 38px;
-    height:38px;
-    margin-left: 0.4rem;
+    color: #ececec;
+    font-family: "GT Haptik Bold Regular";;
 }
 
 .home__subtitle {
@@ -46,13 +50,15 @@
     padding-left: 5.4rem;
     font-weight: var(--font-normal);
     margin-bottom: var(--mb-1);
+    
+    color: #cacaca;
    
 }
 
 .home__subtitle::before{
     width: 70px;
     height: 2px;
-    background-color: var(--text-color);
+    background-color: #cacaca;
     left: 0;
     top: 1rem;
     position: absolute;
@@ -60,41 +66,49 @@
 }
 
 .home__description{
-    max-width: 400px;
+    max-width: 650px;
     margin-bottom: var(--mb-3);
+    color: #b1b1b1;
 }
 
-.home__img {
-    background: url("../../assets/bojji.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-    box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
-    order: 1;
-    justify-self: center;
-    width: 300px;
-    height: 300px;
-
-    animation: profile__animate 8s ease-in-out infinite 1s;
+.paperplane{
+    margin-left: 0.25rem;
 }
 
-@keyframes profile__animate {
-    0% {
-        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    }
-
-    50% {
-        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
-    }
-
-    100% {
-        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    } 
+.home__btn{
+    border-radius: 0.5rem !important;
+    background-color: #2c2c2c;
+    box-shadow: 0 10px 20px #545b5f80, 0 6px 6px #42414180, 0 0 100px -10px #5f707c;
 }
 
 .home__scroll {
-    margin-left: 9.25rem;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.home__scroll-diagonal,
+.home__scroll-container{
+    width: 6.25rem;
+    height: 6.25rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.home__scroll-container{
+    z-index: 1;
+    transform: translate(0, 3.125rem);
+    padding-top: 1.5625rem;
+    
+}
+.home__scroll-diagonal{
+    position: absolute;
+    background-color: transparent;
+    transform: translate(0, 3.125rem) rotate(45deg);
+    background-color: #2c2c2c;
+    border-bottom-right-radius: 1rem;
 }
 
 .wheel {
@@ -111,38 +125,45 @@
     }
 }
 
-.home__scroll-name {
-    color: var(--title-color);
-    font-weight: var(--font-medium);
-    margin-right: var(--mb-0-25);
-    margin-left: 2px;
-    
-}
-
 .home__scroll-arrow {
     font-size: 1.25rem;
-    color: var(--title-color);
+    color: #f5f5f5;
+    animation: arrow 2s infinite;
 }
+
+@keyframes arrow {
+    0% {
+     
+    }
+    50%{
+         transform: translateY(0.5rem);
+    }
+    75%{
+         opacity: 0;
+    }
+ 
+ }
 
 .home__scroll-button{
    display: flex;
+   flex-direction: column;
    align-items: center;
    
    max-width: 10rem;
    cursor: pointer;
+
 }
 
+.home__button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
 
 @media screen and (max-width: 992px) {
     .home__content {
-        grid-template-columns: 100px repeat(2, 1fr);
+        grid-template-columns: 100px 1fr;
         column-gap: 1.25rem;
-    }
-
-    .home__hand {
-        width: 26px;
-        height: 26px;
-        
     }
 
     .home__subititle {
@@ -167,26 +188,25 @@
         box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
     }
 
-    .home__scroll {
-        margin-left: 7.5rem;
+    .home__social{
+        gap: 1rem;
     }
+
 }
 
 @media screen and (max-width: 768px) {
+
+    .home__social{
+        flex-direction: row;
+    }
     .home__content {
         grid-template-columns: 0.5fr 3fr;
         padding-top: 3.5rem;
        
     }
 
-    .home__img {
-        order: initial;
-        justify-self: initial;
-    }
-
     .home__data {
         grid-column: 1/3;
-       
     }
 
     .home__img {
@@ -195,15 +215,22 @@
         height: 200px;
     }
 
-    .home_scroll {
+    .home__scroll-mouse{
         display: none;
     }
 
-    .home__scroll-button{
-        display: none;
-    }
+
 }
 
+@media screen and (max-width: 576px) {
+    .home__title{
+        font-size:  3rem;
+    }
+    .home__scroll-diagonal{
+        width: 4.6875rem;
+        height: 4.6875rem;
+    }
+}
 
 @media screen and (max-width: 350px) {
     .home__img{
@@ -215,4 +242,10 @@
         width: 22px;
         height: 22px;
     }
+
+    .home__title{
+        font-size:  2.3rem;
+    }
+
+    
 }
