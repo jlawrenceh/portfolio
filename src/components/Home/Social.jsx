@@ -12,7 +12,7 @@ function Social() {
         </a>
 
         <a 
-            href="https://www.dribbble.com" 
+            href="mailto:jlawrencehernandez@gmail.com" 
             className="home__social-icon" 
             target="_blank"
         >

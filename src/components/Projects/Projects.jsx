@@ -62,9 +62,9 @@ function Projects() {
                 <img src={placeholder}></img>
             </div>
             <div>
-                <h3>Post App</h3>
+                <h3>More projects coming soon</h3>
                 <span>
-                    A simple social media app... With CRUD operations.
+                    I am currently creating a full stack web app. I'll update this section once it's done. 
                 </span>
             </div>
             </div>
