@@ -31,7 +31,15 @@
 
 @media screen and (max-width: 768px) {
     .hidden_title{
+        display: block;
+    }
+
+    .project__title{
         display: none;
+    }
+
+    .imgContainer{
+        margin-bottom: 1rem;
     }
 
 }

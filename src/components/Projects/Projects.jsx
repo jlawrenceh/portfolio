@@ -32,37 +32,37 @@ function Projects() {
                 opacity: opacityProgress,
             }}>
             <div className="projects__container container">
-            <h3 className="hidden_title"> Project 1 title</h3>
+            <h3 className="hidden_title">Ferbs</h3>
             <div className="imgContainer">
                 <img src={ferbs}></img>
             </div>
             <div>
-                <h3>Ferbs</h3>
+            <h3 className="project__title">Ferbs</h3>
                 <span>
                     An application that uses HTR technology to detect and recognize 
                     handwritten markup language with rendering capabilities. I was responsible for machine learning.
                 </span>
             </div>
 
-            <h3 className="hidden_title"> Project 1 title</h3>
-            <div className="project__image2">
+            <h3 className="hidden_title"> Estrellado's </h3>
+            <div className="imgContainer project__image2">
                 <img src={estrellados}></img>
             </div>
 
             <div>
-                <h3>Estrellado's </h3>
+                <h3 className="project__title">Estrellado's </h3>
                 <span>
                     A food ordering app that for with a dashboard for both user and admin respectively.
                     App features CRUD operations using plain PHP, HTML, and CSS.
                 </span>
             </div>
 
-            <h3 className="hidden_title"> Project 1 title</h3>
-            <div>
+            <h3 className="hidden_title"> More projects coming soon</h3>
+            <div className="imgContainer">
                 <img src={placeholder}></img>
             </div>
             <div>
-                <h3>More projects coming soon</h3>
+                <h3 className="project__title">More projects coming soon</h3>
                 <span>
                     I am currently creating a full stack web app. I'll update this section once it's done. 
                 </span>
