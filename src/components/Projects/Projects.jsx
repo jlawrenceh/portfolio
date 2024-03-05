@@ -40,7 +40,7 @@ function Projects() {
                 <h3>Ferbs</h3>
                 <span>
                     An application that uses HTR technology to detect and recognize 
-                    handwritten markup language with rendering capabilities.
+                    handwritten markup language with rendering capabilities. I was responsible for machine learning.
                 </span>
             </div>
 
@@ -53,7 +53,7 @@ function Projects() {
                 <h3>Estrellado's </h3>
                 <span>
                     A food ordering app that for with a dashboard for both user and admin respectively.
-                    App features CRUD operations using plain PHP, HTML, and CSS. I was responsible for machine learning.
+                    App features CRUD operations using plain PHP, HTML, and CSS.
                 </span>
             </div>
 
