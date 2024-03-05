@@ -34,7 +34,7 @@ function Projects() {
             <div className="projects__container container">
             <h3 className="hidden_title">Ferbs</h3>
             <div className="imgContainer">
-                <img src={ferbs}></img>
+                <img src={ferbs} className="image"></img>
             </div>
             <div>
             <h3 className="project__title">Ferbs</h3>
@@ -45,8 +45,8 @@ function Projects() {
             </div>
 
             <h3 className="hidden_title"> Estrellado's </h3>
-            <div className="imgContainer project__image2">
-                <img src={estrellados}></img>
+            <div className="project__image2">
+                <img src={estrellados} className="image"></img>
             </div>
 
             <div>
@@ -58,8 +58,8 @@ function Projects() {
             </div>
 
             <h3 className="hidden_title"> More projects coming soon</h3>
-            <div className="imgContainer">
-                <img src={placeholder}></img>
+            <div className="">
+                <img src={placeholder} className="image"></img>
             </div>
             <div>
                 <h3 className="project__title">More projects coming soon</h3>

@@ -90,7 +90,7 @@ function Experience() {
                                 Far Eastern University Alabang
                             </span>
                             <div className="experience__calendar">
-                                <i className="uil uil-calendar-alt"></i> 2020 - 2021
+                                <i className="uil uil-calendar-alt"></i> 2024
                             </div>
                         </div>
 

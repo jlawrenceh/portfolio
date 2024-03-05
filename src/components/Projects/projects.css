@@ -29,6 +29,10 @@
     grid-area: image2;
 }
 
+.image{
+    border-radius: 0.4rem;
+    
+}
 @media screen and (max-width: 768px) {
     .hidden_title{
         display: block;
